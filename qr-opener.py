@@ -16,7 +16,7 @@ def extract_qr_code_image_from_pdf(pdf_filename, image_filename):
         page = pdf_document.load_page(page_num)
         pix = page.get_pixmap()
         pix.save(image_filename)
-        break  # Assume the first page contains the QR code
+        break  
 
 def read_qr_code(image_filename):
     """
